@@ -83,7 +83,8 @@ document.querySelectorAll("button").forEach((btn) => {
       calculation[1] === "*" ||
       calculation[0] === "." ||
       calculation[0] === "(" ||
-      calculation[0] === ")"
+      calculation[0] === ")" ||
+      calculation[0] === "="
     ) {
       calculation = "";
       alert("please enter digit first!");
