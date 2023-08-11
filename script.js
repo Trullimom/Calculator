@@ -74,11 +74,19 @@ document.querySelectorAll("button").forEach((btn) => {
         calculation = newValue;
         break;
     }
-    console.log(calculation);
-    console.log(calculation[calculation.length - 1]);
+
     if (!calculation) {
       document.querySelector("#result").innerHTML = "";
       calculation = "";
+    } else if (
+      calculation[1] === "/" ||
+      calculation[1] === "*" ||
+      calculation[0] === "." ||
+      calculation[0] === "(" ||
+      calculation[0] === ")"
+    ) {
+      calculation = "";
+      alert("please enter digit first!");
     } else if (calculation.length > 12) {
       alert("you can enter maximum 12 digits");
     } else {
