@@ -64,3 +64,8 @@ body {
   background-color: rgb(93, 228, 249);
   color: black;
 }
+
+.equal:active {
+  background-color: rgb(173, 236, 246);
+  font-size: 15px;
+}
