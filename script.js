@@ -1,12 +1,13 @@
 //get values from buttons
 //calculate numbers with operators
-let result = "";
+let result = "0";
 let calculation = "";
 document.querySelectorAll("button").forEach((btn) => {
   btn.addEventListener("click", () => {
     value = btn.innerHTML;
 
     switch (value) {
+        let result = "";
       case "1":
         calculation += "1";
         break;
